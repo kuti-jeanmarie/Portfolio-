@@ -340,4 +340,12 @@ footer h2{
   margin: 5px;
   color: white;
 }
-  
+#parcours{
+  margin: 0;
+  padding: 0;
+  background-color: #0A192F;
+  border-radius: 8px;
+}
+#parcours h2{
+  color: white;
+}
