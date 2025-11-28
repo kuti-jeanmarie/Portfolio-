@@ -85,8 +85,8 @@ css
 @keyframes changeImageAccueil {
   0%{background-image: url(./image/kuti\ inter.jpg);}
   33%{background-image: url(./image/IMG_0070.jpg);}
-  66%{background-image: url(./image/IMG_6372~3.jpeg);}
-  100%{background-image: url(./image/jmk\ info.jpg);}
+  66%{background-image: url(./image/IMG-20251030-WA0371.jpg);}
+  100%{background-image: url(./image/IMG_6372~3.jpeg);}
 }
 .yaya{
   font-size: 1.5rem;
@@ -298,7 +298,7 @@ footer h2{
 }
 .corp-apro{
   margin: 0;
-  padding: 0;
+  padding: 5px;
   background-color:#0A192F;
 }
 .corp-apro h2,
@@ -308,6 +308,8 @@ footer h2{
 #etude{
   background-color:#0A192F;
   border-radius: 10px;
+  margin: 0;
+  padding: 5px;
 }
 #etude h2,
 #etude p {
@@ -317,6 +319,8 @@ footer h2{
 .compe{
   background-color:#0A192F;
   border-radius: 10px;
+  margin: 0;
+  padding: 5px;
 }
 .compe h2,
 .compe p {
@@ -326,6 +330,8 @@ footer h2{
 #pro{
   background-color:#0A192F;
   border-radius: 10px;
+  margin: 0;
+  padding: 5px;
 }
 #pro h2,
 #pro p {
