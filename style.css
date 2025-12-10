@@ -195,6 +195,7 @@ form textarea {
 
 .audios{
   display: flex;
+  justify-content: center;
   margin-left: 5%;
 
 }
