@@ -21,7 +21,7 @@ css
   justify-content: space-between;
   padding: 10px 20px;
   align-items: center;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Times New Roman', Times, serif;
   font-size: 20px;
 }
 
@@ -36,7 +36,7 @@ css
   text-decoration: none;
 }
 .nav-links a:hover{
-    background-color: rgb(214, 189, 47);
+    text-decoration:overline;
     padding: 3px 4px;
     border-radius: 4px;
 }
@@ -197,7 +197,6 @@ form textarea {
   display: flex;
   justify-content: center;
   gap: 5px;
-  margin-left: ;
 
 }
 .audio img{
@@ -229,15 +228,15 @@ footer h2{
 .icon{
   background-color: #f1f1f1;
   border-radius:10px;
-  box-shaddow:0 4px 10px rgba(0, 0, 0, 0.1);
   padding:1.3rem;
   width:250px;
   text-align: center;
+  box-shadow:  0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .icon img{
+  margin-bottom: 1rem;
   width: 65px;
   height:65px;
-  margin-buttom:1rem;
   color:blue;
 }
 .icon:hover{
@@ -275,8 +274,8 @@ footer h2{
 .image-projet{
   background-image: url(./image/def-pro.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  background-repaet: no-repaet;
   height: 500px;
   animation: changeImageProjet 10s infinite;
 }

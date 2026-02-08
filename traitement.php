@@ -1,32 +1,29 @@
 <?php
 
 try{
-    $conn = new PDO("mysql:host=localhost;dbname=hotel", "root", "");
+    $conn = new PDO("mysql:host=localhost;dbname=portfolio", "root", "");
 }
 catch(Exception $e){
     echo ("Erreur: " .$e->getMessage());
     exit();
 }
-//if($SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
     $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
     $email = $_POST['email'];
-    $telephone = $_POST['telephone'];
-    $date_heure_arrivee = $_POST['date_heure_arrivee'];
-    $date_heure_depart = $_POST['date_heure_depart'];
-    $nb_personnes = $_POST['nb_personne'];
-    $type_chambre = $_POST['type_chambre'];
+    $sexe = $_POST['sexe'];
+    $message = $_POST['message'];
 
-$sql = $conn->prepare("INSERT INTO reservation(nom, email, telephone, date_heure_arrivee, date_heure_depart, nb_personne, type_chambre) VALUES (:nom, :email, :telephone, :date_heure_arrivee, :date_heure_depart, :nb_personnes, :type_chambre)");
 
-$sql->bindParam(':nom', $nom);
-$sql->bindParam(':email', $email);
-$sql->bindParam(':telephone', $telephone);
-$sql->bindParam(':date_heure_arrivee', $date_heure_arrivee);
-$sql->bindParam(':date_heure_depart', $date_heure_depart);
-$sql->bindParam(':nb_personnes', $nb_personnes);
-$sql->bindParam(':type_chambre', $type_chambre);
+    $sql = $conn->prepare("INSERT INTO contacts(nom, prenom, email, sexe, message) VALUES (:nom, :prenom, :email, :sexe, :message)");
 
-$sql->execute();
-echo "Réservation effectué";
+    $sql->bindParam(':nom', $nom);
+    $sql->bindParam(':email', $prenom);
+    $sql->bindParam(':telephone', $email);
+    $sql->bindParam(':date_heure_arrivee', $sexe);
+    $sql->bindParam(':date_heure_depart', $message);
 
+    $sql->execute();
+    echo "JEAN MARIE a très bien reussi votre message";
+}
 ?>
