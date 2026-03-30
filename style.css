@@ -84,24 +84,25 @@ css
 }
 @keyframes changeImageAccueil {
   0%{background-image: url(./image/kuti\ inter.jpg);}
-  33%{background-image: url(./image/IMG_0070.jpg);}
-  66%{background-image: url(./image/IMG-20251030-WA0371.jpg);}
+  33%{background-image: url(./image/IMG-20251030-WA0371.jpg);}
+  66%{background-image: url(./image/defense1.jpg);}
   100%{background-image: url(./image/IMG_6372~3.jpeg);}
 }
 .yaya{
   font-size: 1.5rem;
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Times New Roman', Times, serif;
   margin-top: 17%;
   color: rgb(255, 255, 255);
 
 }
 .yaya p {
-  font-size: 20px;
+  font-size: 22px;
   color: white;
 }
 .yaya span{
-  color: rgb(8, 23, 63);
+  font-size: 25px;
+  color: rgb(255, 255, 255);
 }
 .btn{
   text-decoration: none;
